@@ -1,0 +1,27 @@
+@use 'root';
+
+body {
+    color: root.$black;
+}
+
+ul, li {
+    list-style: none;
+}
+
+a {
+    color: root.$black;
+    text-decoration: none;
+}
+
+.header {
+    .logo {
+        &:hover {
+            color: root.$black;
+        }
+    }
+    .nav {
+        a {
+            color: root.$black;
+        }
+    }
+}
