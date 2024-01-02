@@ -1,27 +1,194 @@
+@use 'mixin/mixin';
 @use 'root';
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@600&family=Noto+Sans+TC:wght@500&family=Satisfy&display=swap');
 
 body {
     color: root.$black;
+    position: relative;
+}
+
+main {
+    margin-top: 45px;
 }
 
 ul, li {
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 a {
-    color: root.$black;
     text-decoration: none;
 }
 
+img:not(.img_icon, .img) {
+    max-width: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+// 單行...
+.ellipsis1 {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+// 兩行...
+.ellipsis2 {
+    overflow: hidden;
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    // 行數
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    white-space: normal;
+}
+
 .header {
-    .logo {
-        &:hover {
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background: root.$white;
+    height: 45px;
+    .header_left {
+        .logo {
+            font-family: 'Catamaran', sans-serif;
             color: root.$black;
+            &:hover {
+                color: root.$black;
+            }
+        }
+        .nav {
+            a {
+                color: root.$black;
+            }
         }
     }
+    .header_right {
+        .icon {
+            i {
+                color: root.$black;
+                font-size: root.$font_20;
+            }
+        }
+    }
+    // 漢堡選單
+    .menu {
+        top: 0;
+        right: 20px;
+        font-size: root.$font_28;
+        color: root.$black;
+        width: 24px;
+        height: 28px;
+    }
+}
+
+// 漢堡選單列表
+.menu_list {
+    top: 0;
+    left: 0;
+    width: 0;
+    z-index: 3;
+    background: root.$white;
     .nav {
+        display: none;
+        &.active {
+            display: block;
+        }
         a {
             color: root.$black;
+            border-bottom: 1px solid root.$border_color;
+            i {
+                font-size: root.$font_24;
+            }
         }
+    }
+}
+
+.footer {
+    color: root.$white;
+    background: root.$footer_bg;
+    margin-bottom: 58px;
+    h4 {
+        font-size: root.$font_16;
+    }
+    ul {
+        li {
+            font-size: root.$font_12;
+            a {
+                color: root.$white;
+            }
+        }
+    }
+    .copyright {
+        font-size: root.$font_12;
+    }
+    .logo {
+        font-family: 'Catamaran', sans-serif;
+    }
+}
+
+.card {
+    h3 {
+        color: root.$text_color_1;
+        font-size: root.$font_16;
+    }
+    .card-text {
+        span {
+            color: root.$text_color_1;
+        }
+    }
+    del {
+        color: root.$text_color_1;
+    }
+    .sale_price {
+        color: root.$red;
+    }
+}
+
+.near_btn {
+    background: root.$black;
+    a {
+        color: root.$white;
+        i {
+            font-size: root.$font_18;
+        }
+        span {
+            font-size: root.$font_12;
+        }
+        .bell_total {
+            width: 32px;
+            background: root.$red;
+            border-radius: 30px;
+            top:0;
+            left: 0;
+            right: -45px;
+            margin: auto;
+            font-size: root.$font_10;
+        }
+    }
+}
+
+.tools {
+    right: 5%;
+    bottom: 100px;
+    .gotop {
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        background: root.$white;
+        color: root.$black;
+        font-size: root.$font_28;
+        i {
+            bottom: 11px;
+        }
+    }
+}
+
+
+@include mixin.large_desktops {
+    .footer {
+        margin-bottom: 0;
     }
 }

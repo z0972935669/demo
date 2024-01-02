@@ -1,0 +1,15 @@
+@use 'root';
+
+.slick {
+    .slick-prev {
+        left: 0;
+        z-index: 1;
+    }
+    .slick-next {
+        right: 0;
+        z-index: 1;
+    }
+    .slick-dots {
+        bottom: 10px;
+    }
+}
