@@ -10,6 +10,24 @@ $(function () {
         autoplaySpeed: 3000,
     });
 
+    // 電腦版搜尋
+    $('#search').on('click', function() {
+        if ($('#search_input').hasClass('active')) {
+            $('#search_input').removeClass('active');
+        } else {
+            $('#search_input').addClass('active');
+        }
+    })
+
+    // 手機版搜尋
+    $('#m_search').on('click', function() {
+        if ($('#m_search_input').hasClass('active')) {
+            $('#m_search_input').removeClass('active');
+        } else {
+            $('#m_search_input').addClass('active');
+        }
+    })
+
     // go top
     $(window).scroll(function () {
         let topPos = $(this).scrollTop();
