@@ -157,7 +157,7 @@ img:not(.img_icon, .img) {
     background: root.$footer_bg;
     margin-bottom: 58px;
 
-    h4 {
+    h3 {
         font-size: root.$font_16;
     }
 
@@ -181,7 +181,7 @@ img:not(.img_icon, .img) {
 }
 
 .card {
-    h3 {
+    h2 {
         color: root.$text_color_1;
         font-size: root.$font_16;
     }
@@ -257,6 +257,7 @@ img:not(.img_icon, .img) {
     }
 }
 
+// 右側工具
 .tools {
     right: 5%;
     bottom: 115px;
@@ -271,6 +272,15 @@ img:not(.img_icon, .img) {
 
         i {
             bottom: 11px;
+        }
+    }
+}
+
+// 麵包屑
+.breadcrumb {
+    li {
+        h1 {
+            font-size: root.$font_16;
         }
     }
 }
