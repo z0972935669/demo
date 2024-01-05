@@ -155,7 +155,7 @@ img:not(.img_icon, .img) {
 .footer {
     color: root.$white;
     background: root.$footer_bg;
-    margin-bottom: 58px;
+    margin-bottom: 57px;
 
     h3 {
         font-size: root.$font_16;
@@ -203,6 +203,9 @@ img:not(.img_icon, .img) {
 
 .near_btn {
     background: root.$black;
+    left: 0;
+    bottom: 0;
+    z-index: 4;
 
     // 手機版搜尋
     .search_input {
@@ -210,7 +213,7 @@ img:not(.img_icon, .img) {
         left: 0;
         top: -43px;
         display: none;
-        z-index: 3;
+        z-index: 4;
 
         &.active {
             display: block;
