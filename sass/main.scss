@@ -272,6 +272,7 @@ img:not(.img_icon, .img) {
         background: root.$white;
         color: root.$black;
         font-size: root.$font_28;
+        opacity: 0;
 
         i {
             bottom: 11px;
