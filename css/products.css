@@ -1,0 +1,17 @@
+.products .box1 .cat_left .cat_title {
+  color: #000000;
+}
+.products .box1 .cat_left .cat_title::before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 18px;
+  background: #000000;
+  margin-right: 10px;
+}
+.products .box1 .cat_left ul li a {
+  color: #000000;
+}
+.products .box1 .cat_left ul li a:hover {
+  text-decoration: underline;
+}

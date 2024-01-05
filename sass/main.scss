@@ -279,6 +279,9 @@ img:not(.img_icon, .img) {
 // 麵包屑
 .breadcrumb {
     li {
+        a {
+            color: root.$black;
+        }
         h1 {
             font-size: root.$font_16;
         }

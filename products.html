@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/slider-dist.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/main-dist.css">
+    <link rel="stylesheet" href="css/products-dist.css">
 </head>
 
 <body class="products">
@@ -93,7 +94,6 @@
                         <li class="breadcrumb-item"><a href="index.html">首頁</a></li>
                         <li class="breadcrumb-item active" aria-current="page">
                             <h1 class="d-inline-block m-0">上衣</h1>
-                            <!-- 上衣 -->
                         </li>
                     </ol>
                 </nav>
@@ -102,18 +102,29 @@
         <div class="box1 container mb-3">
             <div class="row">
                 <article class="article col-12 col-xl-2">
-                    <div>商品分類</div>
-                    <ul>
-                        <li>
-                            <a href="products.html" title="上衣">上衣</a>
-                        </li>
-                        <li>
-                            <a href="products.html" title="褲子">褲子</a>
-                        </li>
-                        <li>
-                            <a href="products.html" title="襯衫">襯衫</a>
-                        </li>
-                    </ul>
+                    <select class="form-select d-xl-none mb-3" aria-label="Default select example" id="cat_select">
+                        <option value="-1" selected>商品分類</option>
+                        <option value="1">上衣</option>
+                        <option value="2">褲子</option>
+                        <option value="3">襯衫</option>
+                    </select>
+                    <div class="cat_left d-none d-xl-block">
+                        <div class="cat_title d-flex align-items-center mb-2">商品分類</div>
+                        <ul>
+                            <li class="mb-2 d-flex align-items-center justify-content-between">
+                                <a href="products.html" title="上衣">上衣</a>
+                                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                            </li>
+                            <li class="mb-2 d-flex align-items-center justify-content-between">
+                                <a href="products.html" title="褲子">褲子</a>
+                                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                            </li>
+                            <li class="mb-2 d-flex align-items-center justify-content-between">
+                                <a href="products.html" title="襯衫">襯衫</a>
+                                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                            </li>
+                        </ul>
+                    </div>
                 </article>
                 <aside class="aside col-12 col-xl-10">
                     <div class="row row-cols-2 row-cols-md-4">
@@ -269,7 +280,104 @@
                             </div>
                         </div>
                         <!-- end .col -->
+                        <div class="col mb-3">
+                            <div class="card">
+                                <a href="" title="">
+                                    <img src="https://fakeimg.pl/300/" class="card-img-top" alt="">
+                                </a>
+                                <div class="card-body p-2">
+                                    <a href="" title="">
+                                        <h2 class="ellipsis1 card-title">棉質上衣</h2>
+                                    </a>
+                                    <p class="card-text">
+                                        <span>S</span>
+                                        <span>M</span>
+                                        <span>L</span>
+                                    </p>
+                                    <del class="me-1">$1000</del><span class="sale_price ">$600</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end .col -->
+                        <div class="col mb-3">
+                            <div class="card">
+                                <a href="" title="">
+                                    <img src="https://fakeimg.pl/300/" class="card-img-top" alt="">
+                                </a>
+                                <div class="card-body p-2">
+                                    <a href="" title="">
+                                        <h2 class="ellipsis1 card-title">棉質上衣</h2>
+                                    </a>
+                                    <p class="card-text">
+                                        <span>S</span>
+                                        <span>M</span>
+                                        <span>L</span>
+                                    </p>
+                                    <del class="me-1">$1000</del><span class="sale_price ">$600</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end .col -->
+                        <div class="col mb-3">
+                            <div class="card">
+                                <a href="" title="">
+                                    <img src="https://fakeimg.pl/300/" class="card-img-top" alt="">
+                                </a>
+                                <div class="card-body p-2">
+                                    <a href="" title="">
+                                        <h2 class="ellipsis1 card-title">棉質上衣</h2>
+                                    </a>
+                                    <p class="card-text">
+                                        <span>S</span>
+                                        <span>M</span>
+                                        <span>L</span>
+                                    </p>
+                                    <del class="me-1">$1000</del><span class="sale_price ">$600</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end .col -->
+                        <div class="col mb-3">
+                            <div class="card">
+                                <a href="" title="">
+                                    <img src="https://fakeimg.pl/300/" class="card-img-top" alt="">
+                                </a>
+                                <div class="card-body p-2">
+                                    <a href="" title="">
+                                        <h2 class="ellipsis1 card-title">棉質上衣</h2>
+                                    </a>
+                                    <p class="card-text">
+                                        <span>S</span>
+                                        <span>M</span>
+                                        <span>L</span>
+                                    </p>
+                                    <del class="me-1">$1000</del><span class="sale_price ">$600</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end .col -->
                     </div>
+
+                    <!-- 頁碼 -->
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination">
+                            <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Previous">
+                                    <span aria-hidden="true">&laquo;</span>
+                                </a>
+                            </li>
+                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Next">
+                                    <span aria-hidden="true">&raquo;</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <!-- end .pagination -->
+                    </nav>
+                    <!-- end nav -->
                 </aside>
             </div>
         </div>
@@ -363,6 +471,7 @@
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="js/main-dist.js"></script>
+    <script src="js/products-dist.js"></script>
 </body>
 
 </html>

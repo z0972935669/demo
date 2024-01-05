@@ -1,2 +1,30 @@
 @use 'mixin/mixin';
 @use 'root';
+
+.products {
+    .box1 {
+        .cat_left {
+            .cat_title {
+                color: root.$black;
+                &::before {
+                    content: '';
+                    display: inline-block;
+                    width: 10px;
+                    height: 18px;
+                    background: root.$black;
+                    margin-right: 10px;
+                }
+            }
+            ul {
+                li {
+                    a {
+                        color: root.$black;
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

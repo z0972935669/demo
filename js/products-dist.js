@@ -1,0 +1,1 @@
+$((function(){$("#cat_select").on("change",(function(){"-1"!==$(this).val()&&(location.href="products.html")}))}));
