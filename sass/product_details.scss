@@ -1,0 +1,86 @@
+@use 'mixin/mixin';
+@use 'root';
+
+.box1 {
+    // 售價
+    .price {
+        .sale_price {
+            color: root.$red;
+            font-size: root.$font_18;
+        }
+    }
+    // 顏色
+    .color {
+        a {
+            width: 34px;
+            height: 34px;
+            &.color_1 {
+                background: root.$color_1;
+            }
+            &.color_2 {
+                background: root.$color_2;
+            }
+            &.color_3 {
+                background: root.$color_3;
+            }
+            &.active {
+                &::after {
+                    content: '';
+                    border: 2px solid root.$black;
+                    top: -5px;
+                    right: -5px;
+                    bottom: -5px;
+                    left: -5px;
+                    position: absolute;
+                }
+            }
+        }
+    }
+    // 尺寸
+    .size {
+        a {
+            color: root.$black;
+            background: root.$white;
+            width: 34px;
+            height: 34px;
+            border: 1px solid root.$border_color;
+            &.active {
+                color: root.$white;
+                background: root.$black;
+                border: 1px solid;
+                &::after {
+                    content: '';
+                    border: 2px solid root.$black;
+                    top: -5px;
+                    right: -5px;
+                    bottom: -5px;
+                    left: -5px;
+                    position: absolute;
+                }
+            }
+        }
+    }
+    // 數量
+    .num {
+        .input-group {
+            width: 150px;
+            button {
+                background-color: root.$border_color;
+                border-color: root.$border_color;
+            }
+        }
+    }
+    // 按鈕
+    .cart_btn {
+        .buy {
+            color: root.$black;
+            background: root.$white;
+            border: 1px solid root.$black;
+        }
+        .add_cart {
+            color: root.$white;
+            background: root.$black;
+            border: 1px solid root.$black;
+        }
+    }
+}

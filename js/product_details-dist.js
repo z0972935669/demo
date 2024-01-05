@@ -1,0 +1,1 @@
+$((function(){$("#slider_for").slick({slidesToShow:1,slidesToScroll:1,arrows:!1,fade:!0,asNavFor:"#slider_nav"}),$("#slider_nav").slick({slidesToShow:3,slidesToScroll:1,asNavFor:"#slider_for",dots:!1,centerMode:!0,focusOnSelect:!0}),$("#star_rating").starRating({initialRating:4,strokeColor:"#894A00",strokeWidth:10,starSize:25}),$("#num").TouchSpin({min:1})}));
