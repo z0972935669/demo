@@ -73,14 +73,14 @@
     // 按鈕
     .cart_btn {
         .buy {
-            color: root.$black;
+            color: root.$btn_1;
             background: root.$white;
-            border: 1px solid root.$black;
+            border: 1px solid root.$btn_1;
         }
         .add_cart {
             color: root.$white;
-            background: root.$black;
-            border: 1px solid root.$black;
+            background: root.$btn_1;
+            border: 1px solid root.$btn_1;
         }
     }
 }

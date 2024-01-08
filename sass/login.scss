@@ -1,0 +1,23 @@
+@use 'mixin/mixin';
+@use 'root';
+
+html, body {
+    height: 100%;
+}
+
+.login {
+    .box1 {
+        .login_btn {
+            border: 1px solid root.$btn_1;
+            background: root.$btn_1;
+            color: root.$white;
+        }
+    }
+}
+
+.footer {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+}
