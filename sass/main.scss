@@ -49,7 +49,7 @@ img:not(.img_icon, .img) {
 .header {
     top: 0;
     left: 0;
-    z-index: 1;
+    z-index: 2;
     background: root.$white;
     height: 45px;
 
@@ -290,6 +290,24 @@ img:not(.img_icon, .img) {
             font-size: root.$font_16;
         }
     }
+}
+
+// 數量
+.num {
+    .input-group {
+        width: 150px;
+        button {
+            background-color: root.$border_color;
+            border-color: root.$border_color;
+        }
+    }
+}
+
+// 購物車按鈕
+.save_btn {
+    color: root.$white;
+    background-color: root.$btn_1;
+    border: 1px solid root.$btn_1;
 }
 
 

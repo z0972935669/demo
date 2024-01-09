@@ -1,0 +1,35 @@
+@use 'mixin/mixin';
+@use 'root';
+
+html, body {
+    height: 100%;
+}
+
+main {
+    height: 100%;
+}
+
+.cart {
+    .box1 {
+        .cart_item {
+            border-bottom: 1px solid root.$border_color;
+            .cart_img {
+                width: 130px;
+            }
+            .mr_auto {
+                margin-right: auto;
+            }
+            h2 {
+                font-size: root.$font_16;
+            }
+            .trash {
+                font-size: root.$font_24;
+            }
+            
+        }
+    }
+}
+
+@include mixin.tablets {
+    
+}
