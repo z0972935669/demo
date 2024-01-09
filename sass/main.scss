@@ -308,6 +308,9 @@ img:not(.img_icon, .img) {
     color: root.$white;
     background-color: root.$btn_1;
     border: 1px solid root.$btn_1;
+    &:hover {
+        color: root.$white;
+    }
 }
 
 
